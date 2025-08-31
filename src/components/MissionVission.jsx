@@ -19,7 +19,7 @@ const ROIIntelligence = () => {
       
       <div className="max-w-6xl w-full relative z-10">
         {/* Title */}
-        <h1 className="text-5xl md:text-6xl font-light text-white text-center mb-16 tracking-tight">
+        <h1 className="text-5xl font-light text-white text-center mb-16 tracking-tight">
           The ROI of Intelligence
         </h1>
         

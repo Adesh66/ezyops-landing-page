@@ -17,7 +17,6 @@ export default function HospitalityLanding() {
       {/* <ROIIntelligence /> */}
       <BrandPartnersSection />
       <ContactForm />
-
       <Footer />
      
     </>

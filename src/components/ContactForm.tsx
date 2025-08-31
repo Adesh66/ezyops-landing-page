@@ -63,20 +63,20 @@ export default function ContactForm() {
   };
 
   return (
-    <div className=" bg-white py-20 border border-gray-200">
-      <div className="container mx-auto">
-        <div className="flex flex-col justify-center items-center text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Let’s Build the Future of Hospitality Together
+    <div className=" bg-white py-12 sm:py-16 lg:py-20 border border-gray-200">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col justify-center items-center text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+            Let's Build the Future of Hospitality Together
           </h1>
-          <p className="text-lg text-gray-900 max-w-2/3 ">
+          <p className="text-base sm:text-lg text-gray-900 max-w-full sm:max-w-2/3 px-4">
             Have questions or need a demo? Our team is here to help 24/7.
           </p>
         </div>
-        <div className="flex flex-row bg-[#fbfdff] border border-gray-100">
+        <div className="flex flex-col lg:flex-row bg-[#fbfdff] border border-gray-100 rounded-lg lg:rounded-none overflow-hidden">
           {/* Left Panel - Contact Information */}
-          <div className="relative flex-1 ">
-            <div className="min-h-[600px] bg-gradient-to-br from-purple-700 via-purple-600 to-purple-500  p-8 lg:p-12 text-white h-full relative overflow-hidden ">
+          <div className="relative flex-1 order-2 lg:order-1">
+            <div className="min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] bg-gradient-to-br from-purple-700 via-purple-600 to-purple-500 p-6 sm:p-8 lg:p-12 text-white h-full relative overflow-hidden">
               {/* Decorative Background Elements */}
               <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-tl from-pink-400 to-orange-300 rounded-full opacity-70 transform translate-x-20 translate-y-20"></div>
               <div className="absolute bottom-20 right-20 w-32 h-32 bg-purple-400 rounded-full opacity-80"></div>
@@ -115,7 +115,7 @@ export default function ContactForm() {
           </div>
 
           {/* Right Panel - Contact Form */}
-          <div className="bg-white p-8 flex-1  flex flex-col justify-center items-start ">
+          <div className="bg-white p-6 sm:p-8 flex-1 flex flex-col justify-center items-start order-1 lg:order-2">
             {submitStatus === "success" && (
               <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
                 Message sent successfully! We'll get back to you within 24

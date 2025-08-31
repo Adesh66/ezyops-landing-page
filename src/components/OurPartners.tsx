@@ -222,13 +222,13 @@ const BrandPartnersSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-[#fbfdff]">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 bg-[#fbfdff]">
       <div className="container mx-auto">
-        <div className="flex flex-col justify-center items-center text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <div className="flex flex-col justify-center items-center text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
             Our Brand Partners
           </h1>
-          <p className="text-lg text-gray-900 max-w-2/3 ">
+          <p className="text-base sm:text-lg text-gray-900 max-w-full sm:max-w-2/3 px-4">
             We're proud to collaborate with these innovative companies to
             deliver exceptional solutions and drive mutual growth.
           </p>
@@ -245,7 +245,7 @@ const BrandPartnersSection = () => {
         </div> */}
 
         {/* Hotel Partners Grid */}
-        <GridContainer cols="grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+        <GridContainer cols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {hotelPartners.map((partner, index) => (
             <GridItem
               key={`hotel-${index}`}
@@ -258,7 +258,7 @@ const BrandPartnersSection = () => {
                 alt={partner.name}
                 loading={index === 0 ? "eager" : "lazy"}
                 decoding="async"
-                className="max-w-full h-auto object-contain max-h-16 md:max-h-20 transition-opacity duration-300 hover:opacity-80"
+                className="max-w-full h-auto object-contain max-h-12 sm:max-h-14 md:max-h-16 lg:max-h-20 transition-opacity duration-300 hover:opacity-80"
                 width="120"
                 height="80"
               />

@@ -133,36 +133,39 @@ export default function OurProducts() {
   const currentSlideData = slides[currentSlide];
 
   return (
-    <div className=" bg-gray-900 py-20 relative">
-      <div className="container mx-auto">
-        <div className="flex flex-col justify-center items-center text-center mb-12">
-          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
+    <div
+      className=" bg-gray-900 py-12 sm:py-16 lg:py-20 relative"
+      id="products"
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col justify-center items-center text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             🚀 Our Hospitality & Entertainment Suite
           </h1>
-          <p className="text-lg text-white max-w-2/3 ">
+          <p className="text-base sm:text-lg text-white max-w-full sm:max-w-2/3 px-4">
             From hotels to restaurants to cinemas — explore our complete range
             of digital solutions designed to enhance guest experiences, empower
             staff, and streamline operations.
           </p>
         </div>
 
-        <div className="flex flex-row justify-between items-center min-h-[80vh]">
+        <div className="flex flex-col lg:flex-row justify-between items-center min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] gap-8 lg:gap-12">
           {/* Flexible middle section */}
-          <div className="flex flex-col items-start flex-2/3">
+          <div className="flex flex-col items-center lg:items-start w-full lg:flex-2/3 text-center lg:text-left order-2 lg:order-1">
             {/* Slide Content */}
-            <h1 className="text-5xl font-bold text-white mb-6 leading-tight max-w-8/12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight max-w-full lg:max-w-8/12">
               {currentSlideData.title}
             </h1>
-            <p className="text-sm text-white text-opacity-90 leading-relaxed max-w-8/12">
+            <p className="text-sm sm:text-base text-white text-opacity-90 leading-relaxed max-w-full lg:max-w-8/12">
               {currentSlideData.description}
             </p>
           </div>
 
-          <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg flex-4/12">
+          <div className="relative w-full max-w-[300px] sm:max-w-[400px] lg:max-w-none lg:w-auto h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg lg:flex-4/12 order-1 lg:order-2">
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className={`absolute  bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+                className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
                   index === currentSlide ? "opacity-100" : "opacity-0"
                 }`}
               >
