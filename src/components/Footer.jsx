@@ -26,7 +26,7 @@ const Footer = () => {
                 Products
               </a>
               <a
-                href="#blog"
+                href="#contact"
                 className="text-white transition hover:text-blue-500 hover:underline text-sm sm:text-base"
               >
                 Contact us

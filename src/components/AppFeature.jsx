@@ -76,7 +76,7 @@ export default function AppFeature() {
   ];
 
   return (
-    <div className=" bg-gray-50 py-12 sm:py-16 lg:py-20">
+    <div className=" bg-gray-50 py-12 sm:py-16 lg:py-20" id="about">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center items-center text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">

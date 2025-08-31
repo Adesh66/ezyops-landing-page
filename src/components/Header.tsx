@@ -33,7 +33,7 @@ const Header = () => {
             Products
           </a>
           <a
-            href="#blog"
+            href="#contact"
             className="text-gray-700 transition hover:text-blue-500 hover:underline text-sm lg:text-base"
           >
             Contact us
@@ -41,9 +41,9 @@ const Header = () => {
         </nav>
 
         {/* Desktop Download Button */}
-        <button className="hidden md:block bg-white border border-gray-300 px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-gray-700 hover:bg-gray-900 hover:text-white transition font-medium cursor-pointer text-sm lg:text-base">
+        <a href="https://guest-app-seven.vercel.app/guest?hotelid=a1b2c3d4e5f6g7h8&source=room&ref=101" target="_blank"  className="hidden md:block bg-white border border-gray-300 px-4 lg:px-6 py-2 lg:py-2.5 rounded-full text-gray-700 hover:bg-gray-900 hover:text-white transition font-medium cursor-pointer text-sm lg:text-base">
           Explore App
-        </button>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -67,23 +67,23 @@ const Header = () => {
               About us
             </a>
             <a
-              href="#reviews"
+              href="#products"
               className="text-gray-700 transition hover:text-blue-500 hover:underline px-4 py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Products
             </a>
             <a
-              href="#blog"
+              href="#contact"
               className="text-gray-700 transition hover:text-blue-500 hover:underline px-4 py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact us
             </a>
             <div className="px-4 pt-2">
-              <button className="w-full bg-white border border-gray-300 px-6 py-2.5 rounded-full text-gray-700 hover:bg-gray-900 hover:text-white transition font-medium cursor-pointer">
+              <a href="https://guest-app-seven.vercel.app/guest?hotelid=a1b2c3d4e5f6g7h8&source=room&ref=101" target="_blank"  className="w-full bg-white border border-gray-300 px-6 py-2.5 rounded-full text-gray-700 hover:bg-gray-900 hover:text-white transition font-medium cursor-pointer">
                 Explore App
-              </button>
+              </a>
             </div>
           </nav>
         </div>
