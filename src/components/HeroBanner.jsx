@@ -35,13 +35,19 @@ export default function HeroBanner() {
 
             {/* Get Started Button */}
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
-              <button className="bg-gray-900 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-md font-light hover:bg-gray-800 transition cursor-pointer w-full sm:w-auto">
+              <a
+                href="https://guest-app-seven.vercel.app/guest?hotelid=a1b2c3d4e5f6g7h8&source=room&ref=101"
+                target="_blank"
+                className="bg-gray-900 text-white px-6 sm:px-8 py-3 rounded-full text-sm sm:text-md font-light hover:bg-gray-800 transition cursor-pointer w-full sm:w-auto"
+              >
                 Get Started
-              </button>
-
-              <button className="bg-white text-gray-900 border px-6 sm:px-8 py-3 rounded-full text-sm sm:text-md font-light hover:bg-gray-800 hover:text-white transition cursor-pointer w-full sm:w-auto">
+              </a>
+              <a
+                href="#products"
+                className="bg-white text-gray-900 border px-6 sm:px-8 py-3 rounded-full text-sm sm:text-md font-light hover:bg-gray-900 hover:text-white transition cursor-pointer w-full sm:w-auto"
+              >
                 Explore Our Apps
-              </button>
+              </a>
             </div>
           </div>
           <div className="flex justify-center w-full lg:flex-1/3 order-first lg:order-last">

@@ -44,14 +44,14 @@ export default function DownloadSuite() {
 
         {/* App Store Buttons */}
         {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <button className="flex items-center space-x-3 bg-black text-white px-6 py-4 rounded-xl hover:bg-gray-800 transition">
+          <button className="flex items-center space-x-3 bg-gray-900 text-white px-6 py-4 rounded-xl hover:bg-gray-800 transition">
             <Apple className="w-6 h-6" />
             <div className="text-left">
               <div className="text-xs opacity-80">Download on the</div>
               <div className="text-sm font-semibold">App Store</div>
             </div>
           </button>
-          <button className="flex items-center space-x-3 bg-black text-white px-6 py-4 rounded-xl hover:bg-gray-800 transition">
+          <button className="flex items-center space-x-3 bg-gray-900 text-white px-6 py-4 rounded-xl hover:bg-gray-800 transition">
             <Play className="w-6 h-6" />
             <div className="text-left">
               <div className="text-xs opacity-80">Get it on</div>

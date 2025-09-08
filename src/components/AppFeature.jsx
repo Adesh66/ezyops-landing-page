@@ -8,6 +8,7 @@ import {
   ArrowRight,
   Icon,
 } from "lucide-react";
+import LogoUrl from "../assets/ezzyops2.png";
 
 export default function AppFeature() {
   const whyChooseUs = [
@@ -97,16 +98,15 @@ export default function AppFeature() {
               key={index}
               className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 border border-gray-200 ${
                 item.type === "brand"
-                  ? "flex bg-gray-900 text-white justify-center items-center min-h-[120px] sm:min-h-[150px]"
+                  ? "flex bg-white text-white justify-center items-center min-h-[120px] sm:min-h-[150px]"
                   : "bg-white"
               }`}
             >
               {item.type === "brand" ? (
-                <div className="flex items-center space-x-2">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 sm:w-3 sm:h-3 bg-black rounded-full"></div>
+                <div className="flex items-center space-x-2 ">
+                  <div className="flex items-center space-x-2">
+                    <img src={LogoUrl} alt="logo" className="w-48" />
                   </div>
-                  <span className="text-lg sm:text-xl lg:text-2xl font-bold text-white">ezyOps</span>
                 </div>
               ) : (
                 <>
@@ -116,7 +116,9 @@ export default function AppFeature() {
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                     {item.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">{item.description}</p>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
+                    {item.description}
+                  </p>
                 </>
               )}
             </div>
