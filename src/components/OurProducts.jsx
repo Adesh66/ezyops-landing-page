@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from "react";
 import imgGuestApp from "../assets/home.png";
 import imgGuestAppIpad from "../assets/ipad-portrait.png";
+import imgGuestApp2 from "../assets/welcome2.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // const defaultSlidesOld = [
@@ -97,7 +98,7 @@ const defaultSlides = [
     description:
       "Delight guests from the moment they arrive with a digital welcome experience — featuring property highlights, offers, and services.",
     cta: "See Welcome App",
-    imageUrl: imgGuestApp,
+    imageUrl: imgGuestApp2,
     videoUrl: "/videos/products/welcome-app.mp4",
   },
 ];

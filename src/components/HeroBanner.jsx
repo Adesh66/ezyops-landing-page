@@ -1,6 +1,8 @@
 import { Apple, Play } from "lucide-react";
 import Header from "./Header";
 import imgUrl from "../assets/welcome.png";
+import imgUrl2 from "../assets/welcome2.png";
+import imgUrl3 from "../assets/welcome3.png";
 export default function HeroBanner() {
   return (
     <div className="bg-gradient-to-br from-purple-100 via-blue-50 to-purple-200">
@@ -54,7 +56,7 @@ export default function HeroBanner() {
             <div className="flex flex-row">
               <div className="max-w-[250px] sm:max-w-[300px] lg:max-w-[350px] w-full">
                 <img
-                  src={imgUrl}
+                  src={imgUrl2}
                   alt="App Screenshot"
                   className="w-full h-full object-contain"
                 />
